@@ -1,6 +1,7 @@
-package com.example.repository
+package com.example.data.model.repository
 
 import com.example.data.model.User
+import com.example.domain.repositories.UserRepository
 
 class LocalUsersRepository : UserRepository {
 
