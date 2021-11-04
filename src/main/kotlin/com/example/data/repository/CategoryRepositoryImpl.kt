@@ -1,8 +1,8 @@
-package com.example.data.model.repository
+package com.example.data.repository
 
 import com.example.common.Either
 import com.example.common.Failure
-import com.example.data.model.LocalDataSource
+import com.example.data.datasource.LocalDataSource
 import com.example.domain.models.Category
 import com.example.domain.repositories.CategoryRepository
 

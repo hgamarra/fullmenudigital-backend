@@ -1,4 +1,4 @@
-package com.example.data.model
+package com.example.data.datasource
 
 import com.example.domain.models.Category
 import com.google.cloud.firestore.Firestore

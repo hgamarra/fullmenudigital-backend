@@ -1,3 +1,7 @@
 package com.example.domain.models
 
-data class Category()
+data class Category(
+    val id: Int,
+    val name: String,
+    val description: String
+)
