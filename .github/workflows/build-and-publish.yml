@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - 'master'
+      - 'develop'
       
   workflow_dispatch:
 
@@ -31,9 +31,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build project
         run: ./gradlew installDist
-      - name: ls
-        run: ls *
       - name: build docker image
-        run: docker build -t jhoangamarra/fullmenudigital:latest .
+        run: docker build -t jhoangamarra/fullmenudigital:develop .
       - name: push docker image to dockerhub
         run: docker push jhoangamarra/fullmenudigital:latest
