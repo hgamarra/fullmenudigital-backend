@@ -21,8 +21,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Grant permission
-        run: chmod +x gradlew
       - name: Build Ktor project
         run: ./gradlew installDist
       - name: Build Docker Image
