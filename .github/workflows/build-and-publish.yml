@@ -15,7 +15,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: hgamarra/fullmenudigital-backend.git
+          repository: hgamarra/fullmenudigital-backend
           token: ${{ secrets.GHCR_PAT }}
       -
         name: Set up QEMU
