@@ -34,4 +34,4 @@ jobs:
       - name: build docker image
         run: docker build -t jhoangamarra/fullmenudigital:develop .
       - name: push docker image to dockerhub
-        run: docker push jhoangamarra/fullmenudigital:latest
+        run: docker push jhoangamarra/fullmenudigital:develop
