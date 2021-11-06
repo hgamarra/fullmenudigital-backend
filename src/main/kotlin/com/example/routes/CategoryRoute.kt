@@ -69,7 +69,7 @@ fun Route.categoryRouting(
         )
     }
 
-    get("/users/{id}") {
+    get("/users/{id}/documents") {
 
         val id = call.parameters["id"]?.toIntOrNull()
 
